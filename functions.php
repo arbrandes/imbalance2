@@ -32,7 +32,7 @@ add_shortcode( 'aside', 'imbalance2_aside' );
 if ( function_exists( 'add_theme_support' ) )
 {
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 210 );
+	set_post_thumbnail_size( 760 );
 }
 if ( function_exists( 'add_image_size' ) )
 {
@@ -183,20 +183,6 @@ function imbalance2_excerpt_length( $length ) {
 	return 40;
 }
 add_filter( 'excerpt_length', 'imbalance2_excerpt_length' );
-
-/**
- * Replaces "[...]" (appended to automatically generated excerpts).
- *
- * To override this in a child theme, remove the filter and add your own
- * function tied to the excerpt_more filter hook.
- *
- * @since Twenty Ten 1.0
- * @return string An ellipsis
- */
-function imbalance2_auto_excerpt_more( $more ) {
-	return '';
-}
-add_filter( 'excerpt_more', 'imbalance2_auto_excerpt_more' );
 
 /**
  * Remove inline styles printed when the gallery shortcode is used.

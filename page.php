@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+        <?php echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' ); ?>
 		<div id="container">
 			<div id="content" role="main">
 
